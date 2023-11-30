@@ -5,7 +5,8 @@
 <p>Discounted Price: ${{ getDiscountedPrice().toFixed(2)}}</p>
 <p>{{product.inStock >0 ? 'Only '+ product.inStock + ' items left' : 'Not in Stock'}}</p>
 <button [disabled]="isInStock()"> Buy Now</button><br/>
-<input bind-value="name" [attr.aria-hidden]="true">
+<input (input)="onNameChange($event)"><br/>
+<p>name={{name}}</p>
 
 <!-- For Disabled, Hidden and Checked, we cannot use interpolation. For these only property binding will work-->
 

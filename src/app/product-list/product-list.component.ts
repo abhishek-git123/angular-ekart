@@ -27,4 +27,9 @@ export class ProductListComponent {
     return this.product.inStock > 0 ? false : true;
   }
 
+  onNameChange(event:any){
+    console.log(event.target.value);
+    this.name = event.target.value;
+  }
+
 }
