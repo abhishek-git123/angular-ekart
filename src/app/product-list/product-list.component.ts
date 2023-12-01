@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  name = "John Doe";
+  //name = "John Doe";
+  addToCart: number = 0;
   product = {
     name: 'iPhone 15',
     price: 999,
@@ -29,7 +30,18 @@ export class ProductListComponent {
 
   onNameChange(event:any){
     console.log(event.target.value);
-    this.name = event.target.value;
+    //this.name = event.target.value;
+  }
+
+  incrementCartValue(){
+    if(this.addToCart < this.product.inStock){
+      this.addToCart++;
+    }
+  }
+
+  decrementCartValue(){
+    if(this.addToCart > 0)
+    this.addToCart--;
   }
 
 }
