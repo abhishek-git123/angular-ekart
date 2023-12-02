@@ -9,5 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './main-menu.component.css'
 })
 export class MainMenuComponent {
+  mainMenuItems: string[] = ['home Page','Products Page','Sale Page','New Arrival','Contact'];
 
 }
