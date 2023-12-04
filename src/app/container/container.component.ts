@@ -6,9 +6,9 @@ import { SearchComponent } from './search/search.component';
   selector: 'product-list',
   standalone: true,
   imports: [CommonModule, SearchComponent],
-  templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css'
+  templateUrl: './container.component.html',
+  styleUrl: './container.component.css'
 })
-export class ProductListComponent {
+export class ContainerComponent {
   listOfString: string[] = ['Mark', 'John', 'Marry', 'Sarah','Steve'];
 }
