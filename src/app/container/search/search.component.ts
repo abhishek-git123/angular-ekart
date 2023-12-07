@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './search.component.css'
 })
 export class SearchComponent {
-  searchText: string = 'Mens Wear';
+  searchText: string = '';
 
   updateSearchText(event:any){
     this.searchText = event.target.value;
